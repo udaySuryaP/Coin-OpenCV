@@ -5,9 +5,9 @@ from cvzone.ColorModule import ColorFinder
 import serial
 
 ser = serial.Serial('COM4', 9600)  # Replace 'COM4' with your Arduino's port
-deviceId = 'iriunv0'
 
-capture = cv2.VideoCapture(deviceId)
+
+capture = cv2.VideoCapture(0)
 capture.set(3, 640)
 capture.set(4, 480)
 
